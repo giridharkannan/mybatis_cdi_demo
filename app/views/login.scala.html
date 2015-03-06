@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/assets/stylesheets/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+	<nav class="navbar navbar-default">
+	    <div class="container-fluid">
+	    	<ul class="nav navbar-nav">
+	        	<li><a href="#"><b>Social</b> <span class="sr-only">(current)</span></a></li>
+	        </ul>
+		    <form class="navbar-form navbar-right" id="login" action="/login" method="POST">
+		    	<div class="form-group">
+		          <input type="text" name="email" class="form-control" placeholder="email">
+		          <input type="password" name="password" class="form-control" placeholder="password">
+		        </div>
+		        <button type="submit" class="btn btn-primary">Login</button>
+		    </form>
+	    </div> <!-- /container -->
+	</nav>
+	<div class="container">
+		<div class="well row col-md-3 col-md-offset-4">
+			<h3>Register</h3>
+			<form id="sign-up" action="/signup" method="POST">
+				<div class="form-group">
+					<input type="text" name="fname" class="form-control" placeholder="first name"><br>
+					<input type="text" name="lname" class="form-control" placeholder="last name"><br>
+					<input type="text" name="email" class="form-control" placeholder="email"><br>
+					<input type="password" name="password" class="form-control" placeholder="password"><br>
+					<div class="col-md-offset-4">
+					<button type="submit" class="btn btn-success">Sign Up</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+  </body>
+</html>

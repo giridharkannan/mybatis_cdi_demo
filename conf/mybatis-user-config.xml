@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <environments default="user">
+        <environment id="user">
+            <transactionManager type="JDBC"/>
+                <dataSource type="POOLED">
+                        <property name="driver" value="{0}"/>
+                        <property name="url" value="{1}"/>
+                        <property name="username" value="{2}"/>
+                        <property name="password" value="{3}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+    	<package name="org.zm.mapper"/>
+    </mappers>
+</configuration>
