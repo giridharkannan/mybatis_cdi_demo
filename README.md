@@ -6,7 +6,7 @@ In this application you could register as an user and manage your beam (messages
 ##Pre-requirments
 
 - JRE 7+
-- [Playframework] (https://www.playframework.com/) 2+
+- [Playframework] (https://downloads.typesafe.com/play/2.2.6/play-2.2.6.zip) 2.2.6
 - Postgresql (use your favourite RDBMS by changing conf/mybatis-config.xml and build.sbt)
 
 
